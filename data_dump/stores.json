@@ -1,0 +1,26 @@
+[
+  {
+    "_id": "68bae0aabadc650c4f41a3b6",
+    "name": "SRM Arnik Clinic, Pharmacy Store (Reception)",
+    "contactPerson": "Dr. Satarupa Mondal.",
+    "phone": "8981443595",
+    "email": "Srmarik@gmail.com",
+    "status": false,
+    "address": "1st Floor CE / 1/A / 151 Street number 198 Near Axis Mall CE Block Action Area I New Town   Kolkata - 700156",
+    "createdAt": "2025-09-05T13:07:54.714Z",
+    "updatedAt": "2025-10-10T02:58:34.207Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e876a3ef5808a379b8d0eb",
+    "name": "SRM Arnik Clinic Pharmact Store (Back_Up)",
+    "contactPerson": "Dr. Satarupa Mondal",
+    "phone": "8981443595",
+    "email": "Srmarik@gmail.com",
+    "status": false,
+    "address": "\t1st Floor CE / 1/A / 151 Street number 198 Near Axis Mall CE Block Action Area I New Town Kolkata - 700156",
+    "createdAt": "2025-10-10T02:59:47.603Z",
+    "updatedAt": "2025-10-10T02:59:47.603Z",
+    "__v": 0
+  }
+]

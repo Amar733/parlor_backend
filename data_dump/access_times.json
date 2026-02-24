@@ -1,0 +1,68 @@
+[
+  {
+    "_id": "695b7c154a8a147cd5156fff",
+    "key": "pos_access_time",
+    "pageName": "Point of Sale",
+    "openTime": "06:00",
+    "closeTime": "20:45",
+    "timezone": "Asia/Kolkata",
+    "isEnabled": true,
+    "allowWeekends": true,
+    "daysOfWeek": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "breakTimes": [],
+    "holidays": [],
+    "gracePeriodMinutes": 15,
+    "overrideUsers": [],
+    "messages": {
+      "beforeOpen": "Point of Sale will open at 7:00 AM. Please wait.",
+      "afterClose": "Point of Sale is closed. Operating hours: 7:00 AM - 8:30 PM. Contact admin for access.",
+      "onBreak": "System is on break until {endTime}.",
+      "onHoliday": "System is closed today for {reason}."
+    },
+    "createdBy": "686b6bb190eaf25a8dc49e55",
+    "createdAt": "2026-01-05T08:53:41.605Z",
+    "updatedAt": "2026-01-09T02:28:25.349Z",
+    "__v": 0
+  },
+  {
+    "_id": "695b86b54a8a147cd5157ae3",
+    "key": "appointments_access_time",
+    "pageName": "Appointments",
+    "openTime": "00:01",
+    "closeTime": "23:49",
+    "timezone": "Asia/Kolkata",
+    "isEnabled": true,
+    "allowWeekends": true,
+    "daysOfWeek": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "breakTimes": [],
+    "holidays": [],
+    "gracePeriodMinutes": 15,
+    "overrideUsers": [],
+    "messages": {
+      "beforeOpen": "Appointments will open at 7:00 AM. Please wait.",
+      "afterClose": "Appointments is closed. Operating hours: 00:01 - 11:49 PM. Contact admin for access.",
+      "onBreak": "System is on break until {endTime}.",
+      "onHoliday": "System is closed today for {reason}."
+    },
+    "createdBy": "686b6bb190eaf25a8dc49e55",
+    "createdAt": "2026-01-05T09:39:01.767Z",
+    "updatedAt": "2026-01-09T02:36:01.191Z",
+    "__v": 0
+  }
+]

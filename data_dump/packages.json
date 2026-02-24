@@ -1,0 +1,21 @@
+[
+  {
+    "_id": "691ad716ae48e590d3ff6097",
+    "packageName": "Chemical Peel",
+    "services": [
+      "68e8a236ef5808a379b8da7c"
+    ],
+    "numberOfTimes": 4,
+    "frequencyInDays": 21,
+    "price": 14000,
+    "doctorIds": [
+      "68948e32fe02f1b6d015fa07"
+    ],
+    "description": "",
+    "status": true,
+    "createdBy": "686b6bb190eaf25a8dc49e55",
+    "createdAt": "2025-11-17T08:04:38.518Z",
+    "updatedAt": "2025-11-17T08:04:38.518Z",
+    "__v": 0
+  }
+]

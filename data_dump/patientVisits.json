@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "696f070fd20bbac5a331664d",
+    "patientId": "6967357cb9bf1d8e2fbf5526",
+    "serviceId": "6887183833e43c3ef0eecfe9",
+    "doctorId": "68948e32fe02f1b6d015fa07",
+    "service": "Dermatology Consultation",
+    "doctor": "Dr.Satarupa Mondal",
+    "date": "2026-01-20",
+    "time": "10:30",
+    "fileUrl": "",
+    "status": "Confirmed",
+    "notes": "",
+    "patientName": "MRIGANKA GHOSH",
+    "patientEmail": "",
+    "patientPhone": "9073654607 / 9830412648",
+    "deletedAt": null,
+    "createdAt": "2026-01-20T04:39:43.565Z",
+    "updatedAt": "2026-01-20T04:39:43.565Z",
+    "__v": 0
+  }
+]

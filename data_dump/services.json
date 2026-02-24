@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "6887183833e43c3ef0eecfe9",
+    "name": "Dermatology Consultation",
+    "description": "Deramatologist Consultation",
+    "price": 600,
+    "createdAt": "2025-07-28T06:27:04.436Z",
+    "updatedAt": "2025-10-02T10:08:15.720Z",
+    "doctor_ids": [
+      "68948e32fe02f1b6d015fa07"
+    ],
+    "status": true
+  },
+  {
+    "_id": "6887185a33e43c3ef0eecfea",
+    "name": "Nephrology Consultation",
+    "description": "Expert Nephrology Consultation",
+    "price": 1500,
+    "createdAt": "2025-07-28T06:27:38.917Z",
+    "updatedAt": "2025-11-08T02:29:29.406Z",
+    "doctor_ids": [
+      "6892f44d1d3d5c688f4662cb"
+    ],
+    "status": true
+  },
+  {
+    "_id": "6887188533e43c3ef0eecfeb",
+    "name": "Paediatrics Consultation",
+    "description": "Paediatrics Consultation",
+    "price": 600,
+    "createdAt": "2025-07-28T06:28:21.746Z",
+    "updatedAt": "2025-10-02T10:07:59.138Z",
+    "doctor_ids": [
+      "68948fd9fe02f1b6d015fa2f"
+    ],
+    "status": true
+  },
+  {
+    "_id": "688718be33e43c3ef0eecfec",
+    "name": "Psychiatric Consultation",
+    "description": "Psychiatric Consultation",
+    "price": 800,
+    "createdAt": "2025-07-28T06:29:18.837Z",
+    "updatedAt": "2025-11-08T02:28:53.956Z",
+    "doctor_ids": [
+      "68948f1cfe02f1b6d015fa1a"
+    ],
+    "status": true
+  }
+]

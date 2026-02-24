@@ -1,0 +1,37 @@
+[
+  {
+    "_id": "691c63989c962b30461832e6",
+    "doctorId": "68948fd9fe02f1b6d015fa2f",
+    "chamber": "691da68aaa604c33292bb315",
+    "patientName": "test",
+    "patientEmail": "experiments.worlds@gmail.com",
+    "patientPhone": "08604846089",
+    "patientCity": "Fatehpur",
+    "patientAge": "25",
+    "patientGender": "Male",
+    "patientFile": [
+      "/uploads/1763467852169-camera-1763467851460.jpg",
+      "/uploads/1763468146075-camera-1763468145785.jpg",
+      "/uploads/1763468153594-camera-1763468153306.jpg"
+    ],
+    "createdAt": "2025-11-18T12:16:24.790Z",
+    "updatedAt": "2025-11-20T06:36:06.899Z",
+    "__v": 0,
+    "notes": "Testing of notes"
+  },
+  {
+    "_id": "691c7cdcaa604c33292b8112",
+    "doctorId": "68f9f716901c1199902b5b3b",
+    "chamber": "691c7ae4aa604c33292b80db",
+    "patientName": "Mohd Awresh",
+    "patientEmail": "experiments.worlds@gmail.com",
+    "patientPhone": "08604846089",
+    "patientCity": "Fatehpur",
+    "patientAge": "25",
+    "patientGender": "Male",
+    "patientFile": [],
+    "createdAt": "2025-11-18T14:04:12.758Z",
+    "updatedAt": "2025-11-18T14:04:12.758Z",
+    "__v": 0
+  }
+]

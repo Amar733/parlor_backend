@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "68b33a97f03bd6ea711446b9",
+    "accountName": "Kotak Bank",
+    "accountNumber": "7003385411",
+    "remarks": "Primary account",
+    "status": true,
+    "createdAt": "2025-08-30T17:53:27.681Z",
+    "updatedAt": "2025-10-10T08:29:15.054Z",
+    "__v": 0
+  },
+  {
+    "_id": "69311e890f23fd81c003045a",
+    "accountName": "SBI Account",
+    "accountNumber": "37740006915",
+    "remarks": "UPI",
+    "status": true,
+    "createdAt": "2025-12-04T05:39:21.069Z",
+    "updatedAt": "2025-12-18T14:14:09.176Z",
+    "__v": 0
+  }
+]

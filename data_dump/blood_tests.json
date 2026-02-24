@@ -1,0 +1,50 @@
+[
+  {
+    "_id": "686b6bb290eaf25a8dc49e81",
+    "patientName": "Peter Jones",
+    "testType": "Basic Metabolic Panel (BMP)",
+    "date": "2024-08-18",
+    "status": "Pending",
+    "createdAt": "2025-07-07T06:39:46.529Z",
+    "updatedAt": "2025-07-07T06:39:46.529Z"
+  },
+  {
+    "_id": "686b6bb290eaf25a8dc49e80",
+    "patientName": "Jane Smith",
+    "testType": "Lipid Panel",
+    "date": "2024-08-15",
+    "status": "Completed",
+    "results": {
+      "hemoglobin": 13.8,
+      "glucose": 110,
+      "wbc": 5.2,
+      "rbc": 4.5
+    },
+    "createdAt": "2025-07-07T06:39:46.529Z",
+    "updatedAt": "2025-07-07T06:39:46.529Z"
+  },
+  {
+    "_id": "686b6bb290eaf25a8dc49e82",
+    "patientName": "Mary Johnson",
+    "testType": "Complete Blood Count (CBC)",
+    "date": "2024-08-17",
+    "status": "Cancelled",
+    "createdAt": "2025-07-07T06:39:46.529Z",
+    "updatedAt": "2025-07-07T06:39:46.529Z"
+  },
+  {
+    "_id": "686b6bb290eaf25a8dc49e7f",
+    "patientName": "John Doe",
+    "testType": "Complete Blood Count (CBC)",
+    "date": "2024-08-14",
+    "status": "Completed",
+    "results": {
+      "hemoglobin": 15.2,
+      "glucose": 95,
+      "wbc": 6.5,
+      "rbc": 4.8
+    },
+    "createdAt": "2025-07-07T06:39:46.529Z",
+    "updatedAt": "2025-07-07T06:39:46.529Z"
+  }
+]

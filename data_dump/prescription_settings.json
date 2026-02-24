@@ -1,0 +1,14 @@
+[
+  {
+    "_id": "6956026ed24f244ec3d1c75f",
+    "doctor_id": "68948e32fe02f1b6d015fa07",
+    "headerColor": "linear-gradient(135deg, #0ba360 0%, #3cba92 100%)",
+    "logoShape": "circle",
+    "fontStyle": "system-ui, -apple-system, sans-serif",
+    "fontSize": 100,
+    "textColor": "#000000",
+    "createdAt": "2026-01-01T05:13:18.955Z",
+    "updatedAt": "2026-01-12T12:27:27.320Z",
+    "__v": 0
+  }
+]

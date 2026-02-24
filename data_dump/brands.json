@@ -1,0 +1,254 @@
+[
+  {
+    "_id": "68bb3a0a94403150cb265a7f",
+    "name": "SRM Arnik Skin & Healthcare Clinic",
+    "status": true,
+    "old_id": "1",
+    "createdAt": "2025-09-05T19:29:14.062Z",
+    "updatedAt": "2025-09-05T19:30:24.429Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0a94403150cb265a81",
+    "name": "General",
+    "status": true,
+    "old_id": "2",
+    "createdAt": "2025-09-05T19:29:14.699Z",
+    "updatedAt": "2025-09-05T19:30:26.308Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0b94403150cb265a83",
+    "name": "Procedure",
+    "status": true,
+    "old_id": "3",
+    "createdAt": "2025-09-05T19:29:15.328Z",
+    "updatedAt": "2025-09-05T19:30:28.796Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0b94403150cb265a85",
+    "name": "Glenmark",
+    "status": true,
+    "old_id": "4",
+    "createdAt": "2025-09-05T19:29:15.975Z",
+    "updatedAt": "2025-09-05T19:30:31.775Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0c94403150cb265a87",
+    "name": "GARY",
+    "status": true,
+    "old_id": "5",
+    "createdAt": "2025-09-05T19:29:16.631Z",
+    "updatedAt": "2025-09-05T19:30:34.843Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0d94403150cb265a89",
+    "name": "CIAGA",
+    "status": true,
+    "old_id": "6",
+    "createdAt": "2025-09-05T19:29:17.295Z",
+    "updatedAt": "2025-09-05T19:30:37.559Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0e94403150cb265a8b",
+    "name": "DERMOCARE",
+    "status": true,
+    "old_id": "7",
+    "createdAt": "2025-09-05T19:29:18.112Z",
+    "updatedAt": "2025-09-05T19:30:40.742Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0e94403150cb265a8d",
+    "name": "BRINTON",
+    "status": true,
+    "old_id": "8",
+    "createdAt": "2025-09-05T19:29:18.857Z",
+    "updatedAt": "2025-09-05T19:30:49.474Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a0f94403150cb265a8f",
+    "name": "INTENCIS DERMA CARE",
+    "status": true,
+    "old_id": "9",
+    "createdAt": "2025-09-05T19:29:19.493Z",
+    "updatedAt": "2025-09-05T19:30:44.466Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1094403150cb265a91",
+    "name": "ERISOAKNET",
+    "status": true,
+    "old_id": "10",
+    "createdAt": "2025-09-05T19:29:20.274Z",
+    "updatedAt": "2025-09-05T19:30:54.395Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1094403150cb265a93",
+    "name": "INVISION MEDI SCIENCES",
+    "status": true,
+    "old_id": "11",
+    "createdAt": "2025-09-05T19:29:20.974Z",
+    "updatedAt": "2025-09-05T19:31:25.729Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1194403150cb265a95",
+    "name": "ERIS LIFE SCIENCES LIMITED",
+    "status": true,
+    "old_id": "12",
+    "createdAt": "2025-09-05T19:29:21.637Z",
+    "updatedAt": "2025-09-05T19:31:29.578Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1294403150cb265a97",
+    "name": "ALKEM",
+    "status": true,
+    "old_id": "13",
+    "createdAt": "2025-09-05T19:29:22.463Z",
+    "updatedAt": "2025-09-05T19:31:21.214Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1394403150cb265a99",
+    "name": "MANKIND",
+    "status": true,
+    "old_id": "14",
+    "createdAt": "2025-09-05T19:29:23.206Z",
+    "updatedAt": "2025-09-05T19:31:17.178Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1394403150cb265a9b",
+    "name": "ABBOTT",
+    "status": true,
+    "old_id": "15",
+    "createdAt": "2025-09-05T19:29:23.994Z",
+    "updatedAt": "2025-09-05T19:31:12.929Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1494403150cb265a9d",
+    "name": "TORRENT",
+    "status": true,
+    "old_id": "16",
+    "createdAt": "2025-09-05T19:29:24.731Z",
+    "updatedAt": "2025-09-05T19:31:08.762Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1594403150cb265a9f",
+    "name": "REGALIZ",
+    "status": true,
+    "old_id": "17",
+    "createdAt": "2025-09-05T19:29:25.385Z",
+    "updatedAt": "2025-09-05T19:31:05.592Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1694403150cb265aa1",
+    "name": "CANIXA",
+    "status": true,
+    "old_id": "18",
+    "createdAt": "2025-09-05T19:29:26.246Z",
+    "updatedAt": "2026-01-13T06:09:44.183Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3a1794403150cb265aa3",
+    "name": "MSD",
+    "status": true,
+    "old_id": "19",
+    "createdAt": "2025-09-05T19:29:27.155Z",
+    "updatedAt": "2025-09-05T19:30:59.243Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e8c9a620ca4c36507db485",
+    "name": "FLUENCE",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-10-10T08:53:58.448Z",
+    "updatedAt": "2025-10-10T08:53:58.448Z",
+    "__v": 0
+  },
+  {
+    "_id": "68e8da7720ca4c36507dbc7b",
+    "name": "Hair Fact",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-10-10T10:05:43.502Z",
+    "updatedAt": "2025-10-10T10:05:43.502Z",
+    "__v": 0
+  },
+  {
+    "_id": "68ea30fcfdd15ff45541fd9d",
+    "name": "Medical Gauge ",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-10-11T10:27:08.487Z",
+    "updatedAt": "2025-10-11T10:27:08.487Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f0c68777d22594b19b054d",
+    "name": "PARRY",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-10-16T10:18:47.764Z",
+    "updatedAt": "2025-10-16T10:18:47.764Z",
+    "__v": 0
+  },
+  {
+    "_id": "68f2563577d22594b19b66f6",
+    "name": "ENTOD",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-10-17T14:44:05.001Z",
+    "updatedAt": "2025-10-17T14:44:05.001Z",
+    "__v": 0
+  },
+  {
+    "_id": "68fb8f3e901c1199902ba872",
+    "name": "H&H",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-10-24T14:37:50.180Z",
+    "updatedAt": "2025-10-24T14:55:37.749Z",
+    "__v": 0
+  },
+  {
+    "_id": "690b37b07ef006c94dcc54ac",
+    "name": "Dr.Reddy's",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-11-05T11:40:32.234Z",
+    "updatedAt": "2025-11-05T11:40:32.234Z",
+    "__v": 0
+  },
+  {
+    "_id": "69156a47e0a336dd50f6955d",
+    "name": "USV",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-11-13T05:19:03.133Z",
+    "updatedAt": "2025-11-13T05:19:03.133Z",
+    "__v": 0
+  },
+  {
+    "_id": "6923fe23c1fef768169525ac",
+    "name": "AJANTA PHARMA",
+    "status": false,
+    "old_id": "",
+    "createdAt": "2025-11-24T06:41:39.384Z",
+    "updatedAt": "2025-11-24T06:41:39.384Z",
+    "__v": 0
+  }
+]

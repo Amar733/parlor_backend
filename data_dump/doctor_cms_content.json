@@ -1,0 +1,716 @@
+[
+  {
+    "_id": "68d42b3ac1d22661c1ee0add",
+    "page": "home",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "topbar",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:32:42.722Z",
+    "data": {
+      "enabled": true,
+      "phone": "+91-8981443595",
+      "email": "srmarnik@gmail.com"
+    },
+    "updatedAt": "2025-10-12T04:48:13.103Z"
+  },
+  {
+    "_id": "68d42b5ac1d22661c1ee0ade",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "page": "home",
+    "section": "navbar",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:33:14.397Z",
+    "data": {
+      "enabled": true,
+      "logo": "/uploads/1758737956997-Screenshot_2025-09-24_at_11.38.15_PM-removebg-preview.png",
+      "items": [
+        {
+          "id": "1",
+          "text": "Home",
+          "link": "/"
+        },
+        {
+          "id": "2",
+          "text": "About Me",
+          "link": "/about"
+        },
+        {
+          "id": "3",
+          "text": "Services",
+          "link": "/services"
+        },
+        {
+          "id": "4",
+          "text": "Education & Work Experience",
+          "link": "/education-experience"
+        },
+        {
+          "id": "5",
+          "text": "Blog",
+          "link": "/blog"
+        },
+        {
+          "id": "1760244612608",
+          "text": "Testimonial",
+          "link": "/testimonials"
+        },
+        {
+          "id": "1760244640135",
+          "text": "Awards & Recogination",
+          "link": "/awards"
+        }
+      ]
+    },
+    "updatedAt": "2025-10-13T09:00:38.635Z"
+  },
+  {
+    "_id": "68d42b6bc1d22661c1ee0adf",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "page": "home",
+    "section": "carousel",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:33:31.376Z",
+    "data": {
+      "enabled": true,
+      "slides": [
+        {
+          "id": "slide1",
+          "headline_main": "Providing Quality Psychiatric Care To Patients",
+          "description": "Proven ability to manage Complex cases involving co-morbid substance use, PTSD, and Severe Mental Illness across diverse adult and geriatric populations",
+          "button_text": "Book the Consultation",
+          "button_link": "/Book",
+          "image": "/uploads/1760344449388-Dr.Sisir_C_700x720.jpg",
+          "availability_text": "Available 10:00 AM to 1:00 PM and 5:00 PM to 8:00 PM",
+          "emergency_text": "Available On Call"
+        },
+        {
+          "id": "1760345753307",
+          "headline_main": "Comprehensive Mind Health Treatment",
+          "description": "Comprehensive Mind Health Treatment meeting with everyone's personl need",
+          "button_text": "Book the Consultation",
+          "button_link": "/Book",
+          "image": "/uploads/1760346076125-DrSisir_4_C_700x720.jpg",
+          "availability_text": "Available 10:00 AM to 1:00 PM and 5:00 PM to 8:00 PM",
+          "emergency_text": "Available On Call"
+        }
+      ]
+    },
+    "updatedAt": "2025-10-13T09:02:03.894Z"
+  },
+  {
+    "_id": "68d42b78c1d22661c1ee0ae0",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "page": "home",
+    "section": "stats",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:33:44.789Z",
+    "data": {
+      "enabled": true,
+      "items": [
+        {
+          "id": "1",
+          "number": "98",
+          "suffix": "%",
+          "title": "Positive Reviews",
+          "description": "From satisfied & cured patients"
+        },
+        {
+          "id": "2",
+          "number": "2.4",
+          "suffix": "K",
+          "title": "Questions and Answers",
+          "description": "Find answer to your all Psychiatric questions"
+        },
+        {
+          "id": "3",
+          "number": "15",
+          "suffix": "+",
+          "title": "Award Winning",
+          "description": "Award winner in area of Expertise"
+        }
+      ]
+    },
+    "updatedAt": "2025-10-13T03:47:48.959Z"
+  },
+  {
+    "_id": "68d42b85c1d22661c1ee0ae1",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "page": "home",
+    "section": "homepage_about",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:33:57.091Z",
+    "data": {
+      "enabled": true,
+      "subtitle": "Who I'm",
+      "title": "Hello, I'm Dr. Sisir Kumar Mondal",
+      "specialty": "MD Psychiatric",
+      "description": "With years of experience in clinical psychiatry and mental wellness, I’m dedicated to helping individuals live balanced, healthy, and fulfilling lives. My approach combines evidence-based treatments, compassionate care, and modern medical techniques to ensure the best possible outcomes for every patient. I strongly believe that healing begins with understanding — and every consultation is a step toward your emotional and mental well-being. I have 25+ years of clinical experience in both Psychiatric Medical Hospitals and private practice settings. Expert in diagnostic assessment, psychopharmacology, and evidence-based psychotherapies (CBT, DBT-informed, psychodynamic). Committed to compassionate, patient-centered care and advancing mental health equity.",
+      "image1": "/uploads/1760346476670-DrSisir_500x600.jpg",
+      "features": [
+        "Comprehensive Psychiatric Evaluation & Counseling",
+        "Personalized Treatment Plans for Anxiety, Depression, and Stress",
+        "Holistic Healing Through Therapy and Medication Management",
+        "Emergency & Express Mental Health Support Services"
+      ]
+    },
+    "updatedAt": "2025-10-13T10:26:20.721Z"
+  },
+  {
+    "_id": "68d42b91c1d22661c1ee0ae2",
+    "page": "home",
+    "section": "services",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:34:09.264Z",
+    "data": {
+      "enabled": true,
+      "subtitle": "Sercices",
+      "title": "TREATMENT FOR ALL TYPES OF PSYCHIATRIC ISSUES",
+      "description": "I Offer Treatment for for types of Psychiatric issuse in all age group of Patients including Paediatric and Geriatric ones.",
+      "image": "/uploads/1760351565899-PSY_1_800x500.jpg",
+      "items": [
+        {
+          "id": "service1",
+          "title": "Doctor's Consultation",
+          "description": "Need a consultation regarding your Mental Health treatment or diagnosis? I'm ready to provide you with professional psychiatric consultation at an affordable price.",
+          "image": "/uploads/1760351858857-PSY_2_800x500.jpg",
+          "features": [
+            "Personalized Medical Consultations",
+            "Appropriate Treatment Plans",
+            "Diagnostic Services",
+            "OnLine Medical Consulting",
+            "Urgent medical consulting"
+          ]
+        },
+        {
+          "id": "service2",
+          "title": "Depression & Anxiety",
+          "description": "Best Anxiety & Depression Treatment",
+          "image": "/uploads/1760352415583-PSY_3_800X300.jpg",
+          "features": [
+            "Advanced Medication therapy",
+            "Cognitive Behavioral Therapy (CBT)",
+            "Interpersonal Psychotherapy (IPT)"
+          ]
+        },
+        {
+          "id": "service3",
+          "title": "Bipolar Disorders Treatment",
+          "description": "Bipolar disorder is treated with a combination of medications to help manage mood swings and improve daily functioning",
+          "image": "/uploads/1760353049936-PHY_4_800X500.jpg",
+          "features": [
+            "Mood stabilizers",
+            "Atypical antipsychotics",
+            "Antidepressants",
+            "Cognitive Behavioral Therapy (CBT)",
+            "Interpersonal and Social Rhythm Therapy (IPSRT)"
+          ]
+        },
+        {
+          "id": "service4",
+          "title": "Substance Abuse Disorder",
+          "description": "Advanced diagnostic and therapeutic options for hair loss, dandruff, and scalp health issues.",
+          "image": "/uploads/1760353945439-PSY_5_800x500.jpg",
+          "features": [
+            "Assertive community treatment (ACT)",
+            "Cognitive behavioral therapy (CBT)",
+            "Cognitive behavioral therapy (CBT)",
+            "Motivational enhancement therapy"
+          ]
+        }
+      ]
+    },
+    "updatedAt": "2025-10-13T11:12:31.283Z"
+  },
+  {
+    "_id": "68d42b9fc1d22661c1ee0ae3",
+    "page": "home",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "testimonials",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:34:23.129Z",
+    "data": {
+      "enabled": true,
+      "title": "What my Patients Says",
+      "subtitle": "Testimonial",
+      "description": "This is a great site for everything around the home, and it also has a useful section. You can see the best products.",
+      "testimonials": [
+        {
+          "id": "1",
+          "name": "Mathilde Langevin",
+          "title": "CEO at Apple",
+          "content": "Need a consultation regarding your treatment or diagnosis? I'm always ready to provide you with professional healthcare consulting that is offered at an affordable price. At MedoX, you can expect nothing less than the ultimate level of care.",
+          "image": "https://demo.assets.templately.com/fitness/elementor/10/2024/03/fac7f8ff-image-2.png"
+        },
+        {
+          "id": "2",
+          "name": "Ananya Sharma",
+          "title": "Satisfied Patient",
+          "content": "The care I received was exceptional. The doctor patiently listened to my concerns and explained every detail. My skin feels so much healthier now!",
+          "image": "https://randomuser.me/api/portraits/women/45.jpg"
+        },
+        {
+          "id": "3",
+          "name": "Rohan Mehta",
+          "title": "Entrepreneur",
+          "content": "I was struggling with recurring acne for years. After just a few sessions here, I noticed a visible improvement. Highly recommended for anyone seeking expert dermatological care.",
+          "image": "https://randomuser.me/api/portraits/men/32.jpg"
+        },
+        {
+          "id": "4",
+          "name": "Priya Verma",
+          "title": "Marketing Manager",
+          "content": "The clinic is well-maintained and the staff is friendly. The doctor’s treatment plan was spot-on — my pigmentation issues have reduced drastically.",
+          "image": "https://randomuser.me/api/portraits/women/62.jpg"
+        },
+        {
+          "id": "5",
+          "name": "Aditya Narang",
+          "title": "Software Engineer",
+          "content": "I had a great experience! The consultation was thorough and the treatment worked wonders. The results were better than I expected.",
+          "image": "https://randomuser.me/api/portraits/men/27.jpg"
+        },
+        {
+          "id": "6",
+          "name": "Dr. Sneha Iyer",
+          "title": "Physiotherapist",
+          "content": "As a healthcare professional myself, I appreciate the doctor’s precision and attention to detail. The overall patient care and hygiene standards are excellent.",
+          "image": "https://randomuser.me/api/portraits/women/70.jpg"
+        }
+      ]
+    },
+    "updatedAt": "2025-10-06T09:59:53.833Z"
+  },
+  {
+    "_id": "68d42ba8c1d22661c1ee0ae4",
+    "page": "home",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "blog",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:34:32.526Z",
+    "data": {
+      "enabled": false,
+      "title": "My Insights & Articles",
+      "subtitle": "Blog Post",
+      "description": "Stay informed with expert advice, skincare insights, and wellness tips curated to help you lead a healthy and confident life.",
+      "posts": [
+        {
+          "id": "1",
+          "title": "Having Overweight and Depression Can Be Connected",
+          "excerpt": "Recent studies show a strong connection between mental health and physical wellness. Learn how managing your weight can improve your mood and overall well-being.",
+          "image": "https://picsum.photos/seed/healthtips1/800/500",
+          "author": "Dr. Smith",
+          "date": "March 24, 2024",
+          "category": "Health Tips"
+        },
+        {
+          "id": "2",
+          "title": "5 Everyday Habits That Damage Your Skin",
+          "excerpt": "From skipping sunscreen to not getting enough sleep — discover the daily mistakes that might be harming your skin without you realizing it.",
+          "image": "https://random.imagecdn.app/800/500?image=2",
+          "author": "Dr. Ananya Rao",
+          "date": "April 5, 2024",
+          "category": "Skincare"
+        },
+        {
+          "id": "3",
+          "title": "Understanding Acne: Causes, Myths, and Effective Treatments",
+          "excerpt": "Acne affects people of all ages. Let’s break down what really causes it and explore science-backed treatments that actually work.",
+          "image": "https://picsum.photos/seed/acnecare/800/500",
+          "author": "Dr. Rohan Verma",
+          "date": "May 2, 2024",
+          "category": "Dermatology"
+        },
+        {
+          "id": "4",
+          "title": "How Stress Impacts Your Skin Health",
+          "excerpt": "Stress doesn’t just affect your mind — it can lead to breakouts, dullness, and even premature aging. Here’s how to manage it effectively.",
+          "image": "https://random.imagecdn.app/800/500?image=8",
+          "author": "Dr. Sneha Iyer",
+          "date": "June 10, 2024",
+          "category": "Wellness"
+        },
+        {
+          "id": "5",
+          "title": "Top Anti-Aging Treatments That Really Work",
+          "excerpt": "Explore modern anti-aging solutions — from chemical peels to laser therapy — that can help you restore youthful, radiant skin safely.",
+          "image": "https://picsum.photos/seed/antiaging/800/500",
+          "author": "Dr. Aditya Narang",
+          "date": "July 1, 2024",
+          "category": "Aesthetic Care"
+        },
+        {
+          "id": "6",
+          "title": "Monsoon Skincare: How to Keep Your Skin Fresh and Clear",
+          "excerpt": "Humidity and pollution during monsoon can wreak havoc on your skin. Follow these dermatologist-approved tips for glowing, healthy skin all season long.",
+          "image": "https://random.imagecdn.app/800/500?image=15",
+          "author": "Dr. Priya Verma",
+          "date": "August 15, 2024",
+          "category": "Seasonal Care"
+        }
+      ]
+    },
+    "updatedAt": "2025-10-13T10:29:22.599Z"
+  },
+  {
+    "_id": "68d42bb5c1d22661c1ee0ae5",
+    "page": "home",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "footer",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:34:45.159Z",
+    "data": {
+      "enabled": true,
+      "logo": "/uploads/1758737956997-Screenshot_2025-09-24_at_11.38.15_PM-removebg-preview.png",
+      "description": "Providing compassionate and professional healthcare services with a focus on patient well-being and medical excellence.",
+      "socialLinks": [
+        {
+          "name": "Facebook",
+          "url": "#",
+          "icon": "facebook"
+        },
+        {
+          "name": "Instagram",
+          "url": "#",
+          "icon": "instagram"
+        },
+        {
+          "name": "LinkedIn",
+          "url": "#",
+          "icon": "linkedin"
+        },
+        {
+          "name": "YouTube",
+          "url": "#",
+          "icon": "youtube"
+        }
+      ],
+      "services": [
+        {
+          "name": "General Consultation",
+          "url": "/services/consultation"
+        },
+        {
+          "name": "Health Checkups",
+          "url": "/services/checkups"
+        },
+        {
+          "name": "Specialist Care",
+          "url": "/services/specialist"
+        },
+        {
+          "name": "Emergency Care",
+          "url": "/services/emergency"
+        }
+      ],
+      "quickLinks": [
+        {
+          "name": "About Doctor",
+          "url": "/about"
+        },
+        {
+          "name": "Appointments",
+          "url": "/appointments"
+        },
+        {
+          "name": "Patient Reviews",
+          "url": "/reviews"
+        },
+        {
+          "name": "Health Blog",
+          "url": "/blog"
+        }
+      ],
+      "contact": [
+        {
+          "icon": "phone",
+          "text": "8981443595",
+          "url": "https://srmarnik.com"
+        },
+        {
+          "icon": "email",
+          "text": "",
+          "url": "mailto:info@deardoc.com"
+        },
+        {
+          "icon": "location",
+          "text": "123 Medical Center, Health City",
+          "url": "#"
+        },
+        {
+          "icon": "clock",
+          "text": "Mon-Fri: 9AM-6PM",
+          "url": "#"
+        }
+      ],
+      "copyright": "© 2024 Dear Doc. All rights reserved."
+    },
+    "updatedAt": "2025-10-13T15:55:51.972Z"
+  },
+  {
+    "_id": "68d42bc9c1d22661c1ee0ae6",
+    "page": "home",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "settings",
+    "__v": 0,
+    "createdAt": "2025-09-24T17:35:05.699Z",
+    "data": {
+      "enabled": true,
+      "version": "v1",
+      "colorPalette": "blue",
+      "layoutOrder": [
+        "topbar",
+        "navbar",
+        "carousel",
+        "stats",
+        "homepage_about",
+        "services",
+        "testimonials",
+        "blog",
+        "footer"
+      ],
+      "fixedSections": [
+        "topbar",
+        "navbar",
+        "footer"
+      ],
+      "availablePalettes": [
+        {
+          "name": "blue",
+          "label": "Medical Blue",
+          "colors": [
+            "#0F4C75",
+            "#3282B8",
+            "#16A085"
+          ]
+        },
+        {
+          "name": "red",
+          "label": "Medical Red",
+          "colors": [
+            "#991B1B",
+            "#DC2626",
+            "#EF4444"
+          ]
+        },
+        {
+          "name": "green",
+          "label": "Medical Green",
+          "colors": [
+            "#065F46",
+            "#059669",
+            "#10B981"
+          ]
+        },
+        {
+          "name": "purple",
+          "label": "Medical Purple",
+          "colors": [
+            "#581C87",
+            "#7C3AED",
+            "#8B5CF6"
+          ]
+        },
+        {
+          "name": "orange",
+          "label": "Medical Orange",
+          "colors": [
+            "#9A3412",
+            "#EA580C",
+            "#F97316"
+          ]
+        }
+      ],
+      "availableVersions": [
+        {
+          "name": "v1",
+          "label": "Classic Style"
+        },
+        {
+          "name": "v2",
+          "label": "Modern Style"
+        },
+        {
+          "name": "v3",
+          "label": "Minimal Style"
+        }
+      ]
+    },
+    "updatedAt": "2025-10-10T15:07:52.759Z"
+  },
+  {
+    "_id": "68ecb8faed86f9dfabcf6dbb",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "education",
+    "page": "home",
+    "__v": 0,
+    "createdAt": "2025-10-13T08:31:54.969Z",
+    "data": [
+      {
+        "id": "edu1",
+        "degree": "MD Dermatology",
+        "institution": "All India Institute of Medical Sciences (AIIMS)",
+        "duration": "2015 - 2018",
+        "description": "Completed Doctorate in Dermatology with specialization in cosmetic and medical skin treatments. Gained extensive research and clinical experience in advanced skincare procedures.",
+        "slug": "md-dermatology-aiims",
+        "keywords": [
+          "MD Dermatology",
+          "AIIMS",
+          "skin specialist degree",
+          "dermatology education",
+          "SRM Arnik Clinic"
+        ],
+        "image": "/uploads/md-dermatology.jpg",
+        "alt_text": "MD Dermatology certificate from AIIMS"
+      },
+      {
+        "id": "edu2",
+        "degree": "MBBS",
+        "institution": "Kolkata Medical College",
+        "duration": "2008 - 2014",
+        "description": "Completed Bachelor of Medicine and Bachelor of Surgery (MBBS), acquiring foundational medical knowledge and clinical skills in general medicine, surgery, and patient care.",
+        "slug": "mbbs-kolkata-medical-college",
+        "keywords": [
+          "MBBS degree",
+          "Kolkata Medical College",
+          "medical education",
+          "doctor training",
+          "SRM Arnik Clinic"
+        ],
+        "image": "/uploads/mbbs.jpg",
+        "alt_text": "MBBS degree certificate from Kolkata Medical College"
+      },
+      {
+        "id": "edu3",
+        "degree": "Diploma in Aesthetic Dermatology",
+        "institution": "Indian Association of Dermatologists",
+        "duration": "2019 - 2020",
+        "description": "Specialized diploma in cosmetic dermatology, mastering non-surgical procedures, skin rejuvenation, and patient-specific aesthetic treatments.",
+        "slug": "diploma-aesthetic-dermatology",
+        "keywords": [
+          "Aesthetic dermatology",
+          "dermatology diploma",
+          "cosmetic skin care",
+          "SRM Arnik Clinic"
+        ],
+        "image": "/uploads/aesthetic-dermatology.jpg",
+        "alt_text": "Diploma in Aesthetic Dermatology"
+      }
+    ],
+    "updatedAt": "2025-10-13T08:31:54.969Z"
+  },
+  {
+    "_id": "68ecb929ed86f9dfabcf6dbc",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "workExperience",
+    "page": "home",
+    "__v": 0,
+    "createdAt": "2025-10-13T08:32:41.870Z",
+    "data": [
+      {
+        "id": "work1",
+        "title": "Consultant Dermatologist",
+        "organization": "SRM Arnik Skin & Healthcare Clinic",
+        "duration": "2019 - Present",
+        "description": "Providing expert dermatology consultations, advanced skin treatments, and aesthetic procedures. Leading a team of dermatologists to ensure top-quality patient care and results.",
+        "slug": "consultant-dermatologist-srm-arnik",
+        "keywords": [
+          "consultant dermatologist",
+          "SRM Arnik Clinic",
+          "aesthetic procedures",
+          "skin care specialist",
+          "dermatology expert"
+        ],
+        "image": "/uploads/consultant-dermatologist.jpg",
+        "alt_text": "Consultant dermatologist treating patient"
+      },
+      {
+        "id": "work2",
+        "title": "Dermatology Resident",
+        "organization": "Kolkata General Hospital",
+        "duration": "2018 - 2019",
+        "description": "Gained hands-on experience in patient care, clinical procedures, and dermatology research. Assisted in complex cases under senior dermatologists and developed advanced procedural skills.",
+        "slug": "dermatology-resident-kolkata",
+        "keywords": [
+          "dermatology resident",
+          "Kolkata General Hospital",
+          "clinical experience",
+          "skin treatment",
+          "SRM Arnik Clinic"
+        ],
+        "image": "/uploads/dermatology-resident.jpg",
+        "alt_text": "Dermatology resident treating patient at Kolkata General Hospital"
+      },
+      {
+        "id": "work3",
+        "title": "Internship - Dermatology Department",
+        "organization": "AIIMS, New Delhi",
+        "duration": "2014 - 2015",
+        "description": "Completed internship in Dermatology Department, assisting with patient diagnosis, treatments, and clinical research projects. Developed foundational skills for dermatology practice.",
+        "slug": "dermatology-internship-aiims",
+        "keywords": [
+          "dermatology internship",
+          "AIIMS New Delhi",
+          "clinical training",
+          "SRM Arnik Clinic"
+        ],
+        "image": "/uploads/dermatology-internship.jpg",
+        "alt_text": "Dermatology internship at AIIMS, New Delhi"
+      }
+    ],
+    "updatedAt": "2025-10-13T08:32:41.870Z"
+  },
+  {
+    "_id": "68ecbe3fed86f9dfabcf6dbd",
+    "page": "home",
+    "doctor_id": "68948f1cfe02f1b6d015fa1a",
+    "section": "awards_recognition",
+    "__v": 0,
+    "createdAt": "2025-10-13T08:54:23.273Z",
+    "data": [
+      {
+        "id": "award1",
+        "title": "Gold Medal in Dermatology",
+        "description": "Awarded the prestigious Gold Medal for outstanding academic performance and clinical proficiency in Dermatology during post-graduation.",
+        "image": "https://placehold.co/500x500?text=Gold+Medal+in+Dermatology",
+        "alt_text": "Gold Medal in Dermatology award certificate"
+      },
+      {
+        "id": "award2",
+        "title": "Excellence in Patient Care Award",
+        "description": "Recognized for delivering exceptional patient care and maintaining high ethical and professional standards in dermatological practice.",
+        "image": "https://placehold.co/500x500?text=Excellence+in+Patient+Care",
+        "alt_text": "Excellence in Patient Care trophy"
+      },
+      {
+        "id": "award3",
+        "title": "Healthcare Leadership Award",
+        "description": "Honored for contributing to community healthcare development and promoting public awareness about skin and wellness education.",
+        "image": "https://placehold.co/500x500?text=Healthcare+Leadership+Award",
+        "alt_text": "Healthcare Leadership Award plaque"
+      },
+      {
+        "id": "award4",
+        "title": "Best Skin & Aesthetic Clinic of the Year",
+        "description": "SRM Arnik Skin & Healthcare Clinic received the Best Clinic Award for excellence in advanced skin treatments and aesthetic innovations.",
+        "image": "https://placehold.co/500x500?text=Best+Skin+%26+Aesthetic+Clinic",
+        "alt_text": "Best Skin and Aesthetic Clinic of the Year award"
+      },
+      {
+        "id": "award5",
+        "title": "Certificate of Appreciation – Medical Research",
+        "description": "Received a Certificate of Appreciation for contributions to dermatological research and participation in multiple national medical conferences.",
+        "image": "https://placehold.co/500x500?text=Certificate+of+Appreciation",
+        "alt_text": "Certificate of Appreciation for Medical Research"
+      },
+      {
+        "id": "award6",
+        "title": "Outstanding Women in Healthcare Award",
+        "description": "Recognized for inspiring leadership and dedication towards improving women’s health and skin wellness in the community.",
+        "image": "https://placehold.co/500x500?text=Outstanding+Women+in+Healthcare",
+        "alt_text": "Outstanding Women in Healthcare Award trophy"
+      }
+    ],
+    "updatedAt": "2025-10-13T08:58:05.994Z"
+  }
+]

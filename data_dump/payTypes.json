@@ -1,0 +1,62 @@
+[
+  {
+    "_id": "68bc238cf67616416b32820e",
+    "payType": "Cash",
+    "old_id": "1",
+    "deduction": 0,
+    "status": true,
+    "createdAt": "2025-09-06T12:05:32.138Z",
+    "updatedAt": "2026-01-20T03:39:16.950Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bc238cf67616416b328210",
+    "payType": "Cheque",
+    "old_id": "3",
+    "deduction": 0,
+    "status": true,
+    "createdAt": "2025-09-06T12:05:32.854Z",
+    "updatedAt": "2025-09-06T12:05:32.854Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bc238df67616416b328212",
+    "payType": "Credit Card",
+    "old_id": "5",
+    "deduction": 0,
+    "status": true,
+    "createdAt": "2025-09-06T12:05:33.517Z",
+    "updatedAt": "2026-01-04T12:39:29.408Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bc238ff67616416b328214",
+    "payType": "Debit Card",
+    "old_id": "6",
+    "deduction": 0,
+    "status": true,
+    "createdAt": "2025-09-06T12:05:35.420Z",
+    "updatedAt": "2025-10-23T04:40:06.779Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bc2390f67616416b328216",
+    "payType": "UPI",
+    "old_id": "7",
+    "deduction": 0,
+    "status": true,
+    "createdAt": "2025-09-06T12:05:36.067Z",
+    "updatedAt": "2025-09-06T12:05:36.067Z",
+    "__v": 0
+  },
+  {
+    "_id": "68bc2390f67616416b328218",
+    "payType": "Net Banking",
+    "old_id": "8",
+    "deduction": 0,
+    "status": true,
+    "createdAt": "2025-09-06T12:05:36.717Z",
+    "updatedAt": "2025-10-23T04:40:19.919Z",
+    "__v": 0
+  }
+]

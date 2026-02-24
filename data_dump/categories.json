@@ -1,0 +1,156 @@
+[
+  {
+    "_id": "68bb3eae85614702bae0d344",
+    "categoryName": "Consultancy",
+    "parentCategory": null,
+    "old_id": "1",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:02.242Z",
+    "updatedAt": "2025-09-05T19:50:17.854Z",
+    "categoryPath": "Consultancy",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eae85614702bae0d347",
+    "categoryName": "General ",
+    "parentCategory": null,
+    "old_id": "2",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:02.919Z",
+    "updatedAt": "2025-09-05T19:50:19.694Z",
+    "categoryPath": "General ",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eaf85614702bae0d34a",
+    "categoryName": "Electrical",
+    "parentCategory": null,
+    "old_id": "3",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:03.564Z",
+    "updatedAt": "2025-09-05T19:50:13.078Z",
+    "categoryPath": "Electrical",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb085614702bae0d34d",
+    "categoryName": "Electronics",
+    "parentCategory": null,
+    "old_id": "4",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:04.322Z",
+    "updatedAt": "2025-09-05T19:50:09.279Z",
+    "categoryPath": "Electronics",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb185614702bae0d350",
+    "categoryName": "Furniture",
+    "parentCategory": null,
+    "old_id": "5",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:05.067Z",
+    "updatedAt": "2025-09-05T19:50:05.457Z",
+    "categoryPath": "Furniture",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb185614702bae0d353",
+    "categoryName": "Procedure",
+    "parentCategory": null,
+    "old_id": "7",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:05.873Z",
+    "updatedAt": "2025-09-05T19:50:00.188Z",
+    "categoryPath": "Procedure",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb285614702bae0d356",
+    "categoryName": "Medicine",
+    "parentCategory": null,
+    "old_id": "9",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:06.575Z",
+    "updatedAt": "2025-09-05T19:49:54.582Z",
+    "categoryPath": "Medicine",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb385614702bae0d359",
+    "categoryName": "Chemical Peeling",
+    "parentCategory": "68bb3eb185614702bae0d353",
+    "old_id": "8",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:07.210Z",
+    "updatedAt": "2025-09-05T19:49:47.782Z",
+    "categoryPath": "Procedure / Chemical Peeling",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb385614702bae0d35d",
+    "categoryName": "Peel",
+    "parentCategory": "68bb3eb285614702bae0d356",
+    "old_id": "10",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:07.880Z",
+    "updatedAt": "2025-09-05T19:49:45.632Z",
+    "categoryPath": "Medicine / Peel",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb485614702bae0d361",
+    "categoryName": "Capsule",
+    "parentCategory": "68bb3eb285614702bae0d356",
+    "old_id": "11",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:08.608Z",
+    "updatedAt": "2025-09-05T19:49:43.198Z",
+    "categoryPath": "Medicine / Capsule",
+    "__v": 0
+  },
+  {
+    "_id": "68bb3eb585614702bae0d365",
+    "categoryName": "Peeling",
+    "parentCategory": "68bb3eb185614702bae0d353",
+    "old_id": "12",
+    "status": true,
+    "createdAt": "2025-09-05T19:49:09.370Z",
+    "updatedAt": "2025-09-05T19:49:40.826Z",
+    "categoryPath": "Procedure / Peeling",
+    "__v": 0
+  },
+  {
+    "_id": "68d63a58b564af5db6009e12",
+    "categoryName": "Cosmetic Products",
+    "parentCategory": null,
+    "old_id": "",
+    "status": true,
+    "createdAt": "2025-09-26T07:01:44.479Z",
+    "updatedAt": "2025-10-09T09:20:26.961Z",
+    "categoryPath": "Cosmetic Products",
+    "__v": 0
+  },
+  {
+    "_id": "68e77e2ec59d04ae139778f1",
+    "categoryName": "Mole extraction",
+    "parentCategory": "68bb3eb185614702bae0d353",
+    "old_id": "",
+    "status": true,
+    "createdAt": "2025-10-09T09:19:42.331Z",
+    "updatedAt": "2025-10-09T09:21:12.007Z",
+    "categoryPath": "Procedure / Mole extraction",
+    "__v": 0
+  },
+  {
+    "_id": "692950c7c1fef768169643d0",
+    "categoryName": "VACCINE",
+    "parentCategory": null,
+    "old_id": "",
+    "status": false,
+    "createdAt": "2025-11-28T07:35:35.011Z",
+    "updatedAt": "2025-11-28T07:35:35.011Z",
+    "categoryPath": "VACCINE",
+    "__v": 0
+  }
+]

@@ -1,0 +1,771 @@
+[
+  {
+    "_id": "6892e18b7dbe72f7a8fd2ec1",
+    "role_name": "admin",
+    "allpermissions": [
+      {
+        "id": "/dashboard",
+        "label": "Overview",
+        "actions": [
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb7e"
+      },
+      {
+        "id": "/dashboard/profile",
+        "label": "Profile",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6960682797e8590224fceb7f"
+      },
+      {
+        "id": "/dashboard/appointments",
+        "label": "Appointments",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb80"
+      },
+      {
+        "id": "/dashboard/medical-records",
+        "label": "/dashboard/medical-records",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb81"
+      },
+      {
+        "id": "/dashboard/coupons",
+        "label": "Coupons",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb82"
+      },
+      {
+        "id": "/dashboard/patients",
+        "label": "Patients",
+        "actions": [
+          "delete",
+          "edit",
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb83"
+      },
+      {
+        "id": "/dashboard/services",
+        "label": "Services",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb84"
+      },
+      {
+        "id": "/dashboard/summaries",
+        "label": "Summaries",
+        "actions": [
+          "edit",
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb85"
+      },
+      {
+        "id": "/dashboard/cms",
+        "label": "Website Content",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6960682797e8590224fceb86"
+      },
+      {
+        "id": "/dashboard/timeslots",
+        "label": "Time Slots",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6960682797e8590224fceb87"
+      },
+      {
+        "id": "/dashboard/users",
+        "label": "Users",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb88"
+      },
+      {
+        "id": "/dashboard/role-matrix",
+        "label": "Role Matrix",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb89"
+      },
+      {
+        "id": "/dashboard/activity-log",
+        "label": "Activity Log",
+        "actions": [
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb8a"
+      },
+      {
+        "id": "/dashboard/financial-dashboard",
+        "label": "Financial Dashboard",
+        "actions": [
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb8b"
+      },
+      {
+        "id": "/dashboard/sales",
+        "label": "Sales",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb8c"
+      },
+      {
+        "id": "/dashboard/booking",
+        "label": "/dashboard/booking",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb8d"
+      },
+      {
+        "id": "/dashboard/quotation",
+        "label": "/dashboard/quotation",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb8e"
+      },
+      {
+        "id": "/dashboard/work-order",
+        "label": "/dashboard/work-order",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb8f"
+      },
+      {
+        "id": "/dashboard/expense",
+        "label": "Expense",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb90"
+      },
+      {
+        "id": "/dashboard/expense-category",
+        "label": "Expense Category",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb91"
+      },
+      {
+        "id": "/dashboard/accounts",
+        "label": "Accounts",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb92"
+      },
+      {
+        "id": "/dashboard/pay-mode",
+        "label": "Pay Mode",
+        "actions": [
+          "delete",
+          "edit",
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb93"
+      },
+      {
+        "id": "/dashboard/inventory",
+        "label": "Inventory",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb94"
+      },
+      {
+        "id": "/dashboard/inventory/purchases",
+        "label": "Purchases",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb95"
+      },
+      {
+        "id": "/dashboard/gallery",
+        "label": "Gallery",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb96"
+      },
+      {
+        "id": "/dashboard/settings",
+        "label": "Settings",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6960682797e8590224fceb97"
+      },
+      {
+        "id": "/dashboard/reports/store",
+        "label": "Store Reports",
+        "actions": [
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb98"
+      },
+      {
+        "id": "/dashboard/reports/stock-transactions",
+        "label": "Stock Transaction Reports",
+        "actions": [
+          "view"
+        ],
+        "_id": "6960682797e8590224fceb99"
+      },
+      {
+        "id": "/dashboard/inventory/stock-adjustments",
+        "label": "Stock Adjustments",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb9a"
+      },
+      {
+        "id": "/dashboard/activities",
+        "label": "Activities",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb9b"
+      },
+      {
+        "id": "/dashboard/pos",
+        "label": "Point of Sale/POS",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb9c"
+      },
+      {
+        "id": "/dashboard/doctors",
+        "label": "Doctors",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb9d"
+      },
+      {
+        "id": "/dashboard/package-templates",
+        "label": "Package Templates",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb9e"
+      },
+      {
+        "id": "/dashboard/package",
+        "label": "Package Management",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceb9f"
+      },
+      {
+        "id": "/dashboard/package-sales",
+        "label": "Package Sales",
+        "actions": [
+          "delete",
+          "edit",
+          "view"
+        ],
+        "_id": "6960682797e8590224fceba0"
+      },
+      {
+        "id": "/dashboard/doctor-visiting",
+        "label": "Doctor Visiting",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6960682797e8590224fceba1"
+      },
+      {
+        "id": "/dashboard/settings/access-time",
+        "label": "Access Time Management",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6960682797e8590224fceba2"
+      }
+    ],
+    "is_active": true,
+    "deletedAt": null,
+    "createdAt": "2025-08-06T05:00:59.323Z",
+    "updatedAt": "2026-01-09T02:29:59.906Z",
+    "__v": 8
+  },
+  {
+    "_id": "6892e1b37dbe72f7a8fd2ee1",
+    "role_name": "doctor",
+    "allpermissions": [
+      {
+        "id": "/dashboard",
+        "label": "Overview",
+        "actions": [
+          "view"
+        ],
+        "_id": "691c7a7eaa604c33292b7ff1"
+      },
+      {
+        "id": "/dashboard/profile",
+        "label": "Profile",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "691c7a7eaa604c33292b7ff2"
+      },
+      {
+        "id": "/dashboard/appointments",
+        "label": "Appointments",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "691c7a7eaa604c33292b7ff3"
+      },
+      {
+        "id": "/dashboard/medical-records",
+        "label": "/dashboard/medical-records",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "691c7a7eaa604c33292b7ff4"
+      },
+      {
+        "id": "/dashboard/patients",
+        "label": "Patients",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "691c7a7eaa604c33292b7ff5"
+      },
+      {
+        "id": "/dashboard/timeslots",
+        "label": "Time Slots",
+        "actions": [
+          "view"
+        ],
+        "_id": "691c7a7eaa604c33292b7ff6"
+      },
+      {
+        "id": "/dashboard/doctor-visiting",
+        "label": "Doctor Visiting",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "691c7a7eaa604c33292b7ff7"
+      }
+    ],
+    "is_active": true,
+    "deletedAt": null,
+    "createdAt": "2025-08-06T05:01:39.836Z",
+    "updatedAt": "2025-11-18T13:54:06.553Z",
+    "__v": 4
+  },
+  {
+    "_id": "6892f4e31d3d5c688f46633a",
+    "role_name": "subadmin",
+    "allpermissions": [
+      {
+        "id": "/dashboard",
+        "label": "Dashboard",
+        "actions": [
+          "view"
+        ],
+        "_id": "6892f4e31d3d5c688f46633b"
+      },
+      {
+        "id": "/dashboard/profile",
+        "label": "Profile",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6892f4e31d3d5c688f46633c"
+      },
+      {
+        "id": "/dashboard/appointments",
+        "label": "Appointments",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6892f4e31d3d5c688f46633d"
+      },
+      {
+        "id": "/dashboard/medical-records",
+        "label": "Medical Records",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6892f4e31d3d5c688f46633e"
+      },
+      {
+        "id": "/dashboard/coupons",
+        "label": "Coupons",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6892f4e31d3d5c688f46633f"
+      },
+      {
+        "id": "/dashboard/patients",
+        "label": "Patients",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "6892f4e31d3d5c688f466340"
+      },
+      {
+        "id": "/dashboard/services",
+        "label": "Services",
+        "actions": [
+          "delete",
+          "edit",
+          "view"
+        ],
+        "_id": "6892f4e31d3d5c688f466341"
+      },
+      {
+        "id": "/dashboard/summaries",
+        "label": "Summaries",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6892f4e31d3d5c688f466342"
+      },
+      {
+        "id": "/dashboard/cms",
+        "label": "Website Content",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6892f4e31d3d5c688f466343"
+      },
+      {
+        "id": "/dashboard/timeslots",
+        "label": "Time Slots",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "6892f4e31d3d5c688f466344"
+      },
+      {
+        "id": "/dashboard/activity-log",
+        "label": "Activity Log",
+        "actions": [
+          "view"
+        ],
+        "_id": "6892f4e31d3d5c688f466345"
+      }
+    ],
+    "is_active": true,
+    "deletedAt": null,
+    "createdAt": "2025-08-06T06:23:31.920Z",
+    "updatedAt": "2025-08-06T06:23:31.920Z",
+    "__v": 0
+  },
+  {
+    "_id": "68c3b47235252d2d351bb64e",
+    "role_name": "receptionist",
+    "allpermissions": [
+      {
+        "id": "/dashboard",
+        "label": "Overview",
+        "actions": [
+          "view"
+        ],
+        "_id": "69549fd2dd05f3901910f719"
+      },
+      {
+        "id": "/dashboard/sales",
+        "label": "Sales",
+        "actions": [
+          "view"
+        ],
+        "_id": "69549fd2dd05f3901910f71a"
+      },
+      {
+        "id": "/dashboard/expense",
+        "label": "Expense",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "69549fd2dd05f3901910f71b"
+      },
+      {
+        "id": "/dashboard/pay-mode",
+        "label": "Pay Mode",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "69549fd2dd05f3901910f71c"
+      },
+      {
+        "id": "/dashboard/accounts",
+        "label": "Accounts",
+        "actions": [
+          "view"
+        ],
+        "_id": "69549fd2dd05f3901910f71d"
+      },
+      {
+        "id": "/dashboard/appointments",
+        "label": "Appointments",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "69549fd2dd05f3901910f71e"
+      },
+      {
+        "id": "/dashboard/patients",
+        "label": "Patients",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "69549fd2dd05f3901910f71f"
+      },
+      {
+        "id": "/dashboard/medical-records",
+        "label": "/dashboard/medical-records",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "69549fd2dd05f3901910f720"
+      },
+      {
+        "id": "/dashboard/services",
+        "label": "Services",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "69549fd2dd05f3901910f721"
+      },
+      {
+        "id": "/dashboard/inventory",
+        "label": "Inventory",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "69549fd2dd05f3901910f722"
+      },
+      {
+        "id": "/dashboard/inventory/purchases",
+        "label": "Purchases",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "69549fd2dd05f3901910f723"
+      },
+      {
+        "id": "/dashboard/timeslots",
+        "label": "Time Slots",
+        "actions": [
+          "view"
+        ],
+        "_id": "69549fd2dd05f3901910f724"
+      },
+      {
+        "id": "/dashboard/pos",
+        "label": "Point of Sale/POS",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "69549fd2dd05f3901910f725"
+      },
+      {
+        "id": "/dashboard/profile",
+        "label": "Profile",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "69549fd2dd05f3901910f726"
+      },
+      {
+        "id": "/dashboard/inventory/stock-adjustments",
+        "label": "Stock Adjustments",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "69549fd2dd05f3901910f727"
+      },
+      {
+        "id": "/dashboard/reports/store",
+        "label": "Store Reports",
+        "actions": [
+          "view"
+        ],
+        "_id": "69549fd2dd05f3901910f728"
+      },
+      {
+        "id": "/dashboard/doctors",
+        "label": "Doctors",
+        "actions": [
+          "view"
+        ],
+        "_id": "69549fd2dd05f3901910f729"
+      },
+      {
+        "id": "/dashboard/expense-category",
+        "label": "Expense Category",
+        "actions": [
+          "view"
+        ],
+        "_id": "69549fd2dd05f3901910f72a"
+      },
+      {
+        "id": "/dashboard/package-sales",
+        "label": "Package Sales",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "69549fd2dd05f3901910f72b"
+      },
+      {
+        "id": "/dashboard/package-templates",
+        "label": "Package Templates",
+        "actions": [
+          "view",
+          "edit",
+          "delete"
+        ],
+        "_id": "69549fd2dd05f3901910f72c"
+      }
+    ],
+    "is_active": true,
+    "deletedAt": null,
+    "createdAt": "2025-09-12T05:49:38.637Z",
+    "updatedAt": "2025-12-31T04:00:18.061Z",
+    "__v": 12
+  },
+  {
+    "_id": "691316793e7cf51016e8b8aa",
+    "role_name": "accountant",
+    "allpermissions": [
+      {
+        "id": "/dashboard/accounts",
+        "label": "Accounts",
+        "actions": [
+          "view"
+        ],
+        "_id": "691316793e7cf51016e8b8ab"
+      },
+      {
+        "id": "/dashboard/sales",
+        "label": "Sales",
+        "actions": [
+          "view",
+          "edit"
+        ],
+        "_id": "691316793e7cf51016e8b8ac"
+      }
+    ],
+    "is_active": true,
+    "deletedAt": null,
+    "createdAt": "2025-11-11T10:56:57.047Z",
+    "updatedAt": "2025-11-11T10:56:57.047Z",
+    "__v": 0
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "_id": "697af15716bdb1a6333034b8",
+    "name": "Registration Fee",
+    "charge": 500,
+    "active": true,
+    "createdAt": "2026-01-29T05:34:15.299Z",
+    "updatedAt": "2026-01-29T05:34:15.299Z",
+    "__v": 0
+  },
+  {
+    "_id": "697af18a16bdb1a6333034bb",
+    "name": "premium Fee",
+    "charge": 900,
+    "active": true,
+    "createdAt": "2026-01-29T05:35:06.648Z",
+    "updatedAt": "2026-01-29T05:35:06.648Z",
+    "__v": 0
+  },
+  {
+    "_id": "697af19216bdb1a6333034be",
+    "name": "FeeFulllPaid",
+    "charge": 909890,
+    "active": true,
+    "createdAt": "2026-01-29T05:35:14.003Z",
+    "updatedAt": "2026-01-29T05:57:48.838Z",
+    "__v": 0
+  }
+]

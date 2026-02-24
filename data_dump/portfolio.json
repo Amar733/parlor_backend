@@ -1,0 +1,30 @@
+[
+  {
+    "_id": "686b6bb190eaf25a8dc49e60",
+    "title": "Advanced Dental Equipment",
+    "imageUrl": "/uploads/1752669815819-G3.png",
+    "createdAt": "2025-07-07T06:39:45.604Z",
+    "updatedAt": "2025-07-16T12:43:38.815Z"
+  },
+  {
+    "_id": "686b6bb190eaf25a8dc49e61",
+    "title": "Comfortable Patient Rooms",
+    "imageUrl": "https://placehold.co/600x400.png",
+    "createdAt": "2025-07-07T06:39:45.604Z",
+    "updatedAt": "2025-07-07T06:39:45.604Z"
+  },
+  {
+    "_id": "686b6bb190eaf25a8dc49e62",
+    "title": "Smile Makeover Result",
+    "imageUrl": "https://placehold.co/600x400.png",
+    "createdAt": "2025-07-07T06:39:45.604Z",
+    "updatedAt": "2025-07-07T06:39:45.604Z"
+  },
+  {
+    "_id": "686b6bb190eaf25a8dc49e5f",
+    "title": "Modern Clinic Reception",
+    "imageUrl": "https://placehold.co/600x400.png",
+    "createdAt": "2025-07-07T06:39:45.604Z",
+    "updatedAt": "2025-07-07T06:39:45.604Z"
+  }
+]

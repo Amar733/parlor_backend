@@ -1,0 +1,20 @@
+PORT=5001
+NODE_ENV=development
+
+# Database Configuration
+MONGODB_URI=mongodb+srv://akashsingh4321a:z8m0OYcAjqGbGVaO@cluster0.ctar15f.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+MONGODB_DB=srk_arnkin
+
+# JWT Configuration
+JWT_SECRET=your-super-secret-key-that-is-at-least-32-characters-long
+
+# Google AI Configuration (for Genkit)
+GOOGLE_AI_API_KEY=AIzaSyDkLIGnNdLXNpl-y3P_hNgIEAJXaceYgdg
+GEMINI_API_KEY=AIzaSyDkLIGnNdLXNpl-y3P_hNgIEAJXaceYgdg
+
+# File Upload Configuration
+UPLOAD_DIR=uploads
+MAX_FILE_SIZE=10485760
+
+# CORS Configuration
+FRONTEND_URL=http://192.168.29.22:9002

@@ -1,0 +1,20 @@
+[
+  {
+    "_id": "6887191133e43c3ef0eecfed",
+    "name": "Dr. Satarupa Mondal",
+    "specialization": "Dermatology",
+    "bio": "Dr. Satarupa Mondal, a highly respected and dedicated physician with a specialization in Dermatology, Venereology, Trichology and Cosmetology.\n",
+    "photoUrl": "https://placehold.co/150x150.png",
+    "createdAt": "2025-07-28T06:30:41.416Z",
+    "updatedAt": "2025-07-28T06:30:41.416Z"
+  },
+  {
+    "_id": "6887195633e43c3ef0eecfee",
+    "name": "Dr. Tarak Choudhury",
+    "specialization": "Nephrology",
+    "bio": "Specialised in all types of Kidney disease",
+    "photoUrl": "https://placehold.co/150x150.png",
+    "createdAt": "2025-07-28T06:31:50.013Z",
+    "updatedAt": "2025-07-28T06:31:50.014Z"
+  }
+]

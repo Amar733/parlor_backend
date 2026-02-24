@@ -1,0 +1,24 @@
+[
+  {
+    "_id": "691c7ae4aa604c33292b80db",
+    "doctorId": "68f9f716901c1199902b5b3b",
+    "chamberName": "Amar Clinic",
+    "city": "Hazipur",
+    "contactPerson": "Akash",
+    "contactNumber": "08604846089",
+    "createdAt": "2025-11-18T13:55:48.463Z",
+    "updatedAt": "2025-11-18T13:55:48.463Z",
+    "__v": 0
+  },
+  {
+    "_id": "691da68aaa604c33292bb315",
+    "doctorId": "68948fd9fe02f1b6d015fa2f",
+    "chamberName": "S K Mediclinic",
+    "city": "Kolkata",
+    "contactPerson": "M",
+    "contactNumber": "9830204996",
+    "createdAt": "2025-11-19T11:14:18.338Z",
+    "updatedAt": "2025-11-19T11:14:18.338Z",
+    "__v": 0
+  }
+]

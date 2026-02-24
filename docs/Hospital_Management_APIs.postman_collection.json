@@ -1,0 +1,1924 @@
+{
+	"info": {
+		"_postman_id": "hospital-management-api",
+		"name": "Hospital Management System APIs",
+		"description": "Complete API collection for Hospital Management System with appointment booking, time slots, and capacity management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "hospital-management"
+	},
+	"item": [
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "Admin Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"admin@srmarnik.com\",\n  \"password\": \"1234567\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "Login as admin user"
+					}
+				},
+				{
+					"name": "Doctor Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"email\": \"dr.awresh@hospital.com\",\n  \"password\": \"doctor123\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/auth/login",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						},
+						"description": "Login as doctor user"
+					}
+				}
+			]
+		},
+		{
+			"name": "Appointment Booking (Public)",
+			"item": [
+				{
+					"name": "Check Slot Availability",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/check-availability?doctorId={{doctorId}}&date=2025-08-04&time=09:00",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"check-availability"
+							],
+							"query": [
+								{
+									"key": "doctorId",
+									"value": "{{doctorId}}"
+								},
+								{
+									"key": "date",
+									"value": "2025-08-04"
+								},
+								{
+									"key": "time",
+									"value": "09:00"
+								}
+							]
+						},
+						"description": "Check if a specific time slot is available for booking"
+					}
+				},
+				{
+					"name": "Book Appointment (New Patient)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"doctorId\": \"{{doctorId}}\",\n  \"service\": \"General Consultation\",\n  \"serviceId\": \"{{generalConsultationId}}\",\n  \"date\": \"2025-08-04\",\n  \"time\": \"11:00\",\n  \"notes\": \"Regular checkup appointment\",\n  \"patientFirstName\": \"Test\",\n  \"patientLastName\": \"Patient\",\n  \"patientContact\": \"+1234567890\",\n  \"patientAge\": 30,\n  \"patientGender\": \"Male\",\n  \"patientAddress\": \"123 Test Street, Test City\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"book"
+							]
+						},
+						"description": "Book an appointment with new patient data"
+					}
+				},
+				{
+					"name": "Book Appointment (Existing Patient)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"doctorId\": \"{{doctorId}}\",\n  \"patientId\": \"{{johnDoeId}}\",\n  \"service\": \"Follow-up Consultation\",\n  \"serviceId\": \"{{followupConsultationId}}\",\n  \"date\": \"2025-08-05\",\n  \"time\": \"15:00\",\n  \"notes\": \"Follow-up appointment for existing patient\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"book"
+							]
+						},
+						"description": "Book an appointment for existing patient"
+					}
+				},
+				{
+					"name": "Get Slot Appointments",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/slot-appointments?doctorId={{doctorId}}&date=2025-08-04&time=09:00",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"slot-appointments"
+							],
+							"query": [
+								{
+									"key": "doctorId",
+									"value": "{{doctorId}}"
+								},
+								{
+									"key": "date",
+									"value": "2025-08-04"
+								},
+								{
+									"key": "time",
+									"value": "09:00"
+								}
+							]
+						},
+						"description": "Get all appointments for a specific time slot"
+					}
+				},
+				{
+					"name": "Cancel Appointment",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/cancel/{{appointmentId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"cancel",
+								"{{appointmentId}}"
+							]
+						},
+						"description": "Cancel an existing appointment"
+					}
+				}
+			]
+		},
+		{
+			"name": "Time Slots Management",
+			"item": [
+				{
+					"name": "Get Master Time Slots",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots?source=master",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots"
+							],
+							"query": [
+								{
+									"key": "source",
+									"value": "master"
+								}
+							]
+						},
+						"description": "Get all master time slots"
+					}
+				},
+				{
+					"name": "Get Doctor Time Slots",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots/doctor/{{doctorId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots",
+								"doctor",
+								"{{doctorId}}"
+							]
+						},
+						"description": "Get time slots for a specific doctor"
+					}
+				},
+				{
+					"name": "Get Doctor Availability for Date",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots/availability/{{doctorId}}/2025-08-04",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots",
+								"availability",
+								"{{doctorId}}",
+								"2025-08-04"
+							]
+						},
+						"description": "Get doctor availability for a specific date with booking counts"
+					}
+				},
+				{
+					"name": "Update Doctor Time Slots",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"monday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\"],\n  \"tuesday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\"],\n  \"wednesday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\"],\n  \"thursday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\"],\n  \"friday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\"],\n  \"saturday\": [\"09:00\", \"09:30\", \"10:00\"],\n  \"sunday\": [\"10:00\", \"11:00\"]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots/doctor/{{doctorId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots",
+								"doctor",
+								"{{doctorId}}"
+							]
+						},
+						"description": "Update doctor's weekly time slots (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Appointments Management",
+			"item": [
+				{
+					"name": "Get All Appointments",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments"
+							]
+						},
+						"description": "Get all appointments (Admin only)"
+					}
+				},
+				{
+					"name": "Get Appointment by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments/{{appointmentId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments",
+								"{{appointmentId}}"
+							]
+						},
+						"description": "Get specific appointment details"
+					}
+				},
+				{
+					"name": "Create Appointment (Admin)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"patientId\": \"{{johnDoeId}}\",\n  \"doctorId\": \"{{doctorId}}\",\n  \"service\": \"General Consultation\",\n  \"date\": \"2025-08-06\",\n  \"time\": \"10:00\",\n  \"status\": \"confirmed\",\n  \"notes\": \"Admin created appointment\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments"
+							]
+						},
+						"description": "Create appointment as admin"
+					}
+				},
+				{
+					"name": "Update Appointment Status",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"status\": \"completed\",\n  \"notes\": \"Appointment completed successfully\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointments/{{appointmentId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointments",
+								"{{appointmentId}}"
+							]
+						},
+						"description": "Update appointment status and notes"
+					}
+				}
+			]
+		},
+		{
+			"name": "Patients Management",
+			"item": [
+				{
+					"name": "Get All Patients",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/patients",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						},
+						"description": "Get all patients (Admin only)"
+					}
+				},
+				{
+					"name": "Get Patient by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/patients/{{johnDoeId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"patients",
+								"{{johnDoeId}}"
+							]
+						},
+						"description": "Get specific patient details"
+					}
+				},
+				{
+					"name": "Create Patient",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"New\",\n  \"lastName\": \"Patient\",\n  \"contact\": \"+9876543210\",\n  \"age\": 28,\n  \"gender\": \"Female\",\n  \"address\": \"456 New Address, City\",\n  \"email\": \"newpatient@email.com\",\n  \"emergencyContact\": \"+1122334455\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/patients",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"patients"
+							]
+						},
+						"description": "Create a new patient"
+					}
+				},
+				{
+					"name": "Update Patient",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstName\": \"Updated\",\n  \"lastName\": \"Patient\",\n  \"contact\": \"+9876543210\",\n  \"age\": 29,\n  \"address\": \"Updated Address, City\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/patients/{{johnDoeId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"patients",
+								"{{johnDoeId}}"
+							]
+						},
+						"description": "Update patient information"
+					}
+				}
+			]
+		},
+		{
+			"name": "Services Management",
+			"item": [
+				{
+					"name": "Get All Services",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/services",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"services"
+							]
+						},
+						"description": "Get all available medical services"
+					}
+				},
+				{
+					"name": "Get Service by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/services/{{generalConsultationId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"services",
+								"{{generalConsultationId}}"
+							]
+						},
+						"description": "Get specific service details"
+					}
+				},
+				{
+					"name": "Create Service",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"New Medical Service\",\n  \"description\": \"Description of the new medical service\",\n  \"price\": 750,\n  \"duration\": 40,\n  \"category\": \"consultation\",\n  \"isActive\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/services",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"services"
+							]
+						},
+						"description": "Create a new medical service (Admin only)"
+					}
+				},
+				{
+					"name": "Update Service",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Updated Service Name\",\n  \"description\": \"Updated description\",\n  \"price\": 800,\n  \"duration\": 45,\n  \"isActive\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/services/{{generalConsultationId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"services",
+								"{{generalConsultationId}}"
+							]
+						},
+						"description": "Update an existing service (Admin only)"
+					}
+				},
+				{
+					"name": "Delete Service",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/services/{{generalConsultationId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"services",
+								"{{generalConsultationId}}"
+							]
+						},
+						"description": "Delete a service (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Doctor Management",
+			"item": [
+				{
+					"name": "Get All Doctors",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/users?role=doctor",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "role",
+									"value": "doctor"
+								}
+							]
+						},
+						"description": "Get all doctors (Admin only)"
+					}
+				},
+				{
+					"name": "Create Doctor",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Dr. New Doctor\",\n  \"email\": \"newdoctor@hospital.com\",\n  \"password\": \"doctor123\",\n  \"role\": \"doctor\",\n  \"specialization\": \"Cardiology\",\n  \"bio\": \"Experienced cardiologist with 15+ years of experience\",\n  \"permissions\": [\n    \"appointments:view\",\n    \"appointments:edit\",\n    \"patients:view\",\n    \"patients:edit\",\n    \"timeslots:view\",\n    \"timeslots:edit\"\n  ]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/users",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						},
+						"description": "Create a new doctor (Admin only)"
+					}
+				},
+				{
+					"name": "Update Doctor",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Dr. Updated Name\",\n  \"specialization\": \"Updated Specialization\",\n  \"bio\": \"Updated bio information\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/users/{{doctorId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{{doctorId}}"
+							]
+						},
+						"description": "Update doctor information (Admin only)"
+					}
+				},
+				{
+					"name": "Get Doctor by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/users/{{doctorId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{{doctorId}}"
+							]
+						},
+						"description": "Get specific doctor details"
+					}
+				},
+				{
+					"name": "Delete Doctor",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/users/{{doctorId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{{doctorId}}"
+							]
+						},
+						"description": "Delete a doctor (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Doctor Slots Management",
+			"item": [
+				{
+					"name": "Get Doctor's Current Slots",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots/doctor/{{doctorId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots",
+								"doctor",
+								"{{doctorId}}"
+							]
+						},
+						"description": "Get doctor's current weekly time slot configuration"
+					}
+				},
+				{
+					"name": "Set Doctor Weekly Slots",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"monday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\", \"14:00\", \"14:30\", \"15:00\"],\n  \"tuesday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\", \"14:00\", \"14:30\", \"15:00\"],\n  \"wednesday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\", \"14:00\", \"14:30\", \"15:00\"],\n  \"thursday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\", \"14:00\", \"14:30\", \"15:00\"],\n  \"friday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\", \"14:00\", \"14:30\", \"15:00\"],\n  \"saturday\": [\"09:00\", \"09:30\", \"10:00\", \"10:30\", \"11:00\"],\n  \"sunday\": [\"10:00\", \"10:30\", \"11:00\", \"15:00\", \"15:30\", \"16:00\"]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots/doctor/{{doctorId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots",
+								"doctor",
+								"{{doctorId}}"
+							]
+						},
+						"description": "Set doctor's weekly available time slots"
+					}
+				},
+				{
+					"name": "Update Doctor Capacity",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"patientsPerSlot\": 3\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots/doctor/{{doctorId}}/capacity",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots",
+								"doctor",
+								"{{doctorId}}",
+								"capacity"
+							]
+						},
+						"description": "Update doctor's patient capacity per time slot"
+					}
+				},
+				{
+					"name": "Update Specific Day Slots",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"slots\": [\"09:00\", \"09:30\", \"10:00\", \"14:00\", \"14:30\"]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/timeslots/doctor/{{doctorId}}/monday",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"timeslots",
+								"doctor",
+								"{{doctorId}}",
+								"monday"
+							]
+						},
+						"description": "Update doctor's slots for a specific day (monday, tuesday, etc.)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Blog Management",
+			"item": [
+				{
+					"name": "Get All Blog Posts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/blog",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blog"
+							]
+						},
+						"description": "Get all blog posts"
+					}
+				},
+				{
+					"name": "Create Blog Post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"New Health Blog Post\",\n  \"content\": \"This is the content of the blog post about health and wellness...\",\n  \"author\": \"Dr. Admin\",\n  \"category\": \"Health Tips\",\n  \"tags\": [\"health\", \"wellness\", \"tips\"]\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/blog",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blog"
+							]
+						},
+						"description": "Create a new blog post (Admin only)"
+					}
+				},
+				{
+					"name": "Get Blog Post by ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/blog/{{blogPostId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"{{blogPostId}}"
+							]
+						},
+						"description": "Get specific blog post"
+					}
+				},
+				{
+					"name": "Update Blog Post",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Updated Blog Post Title\",\n  \"content\": \"Updated content...\",\n  \"category\": \"Updated Category\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/blog/{{blogPostId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"{{blogPostId}}"
+							]
+						},
+						"description": "Update blog post (Admin only)"
+					}
+				},
+				{
+					"name": "Delete Blog Post",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/blog/{{blogPostId}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blog",
+								"{{blogPostId}}"
+							]
+						},
+						"description": "Delete blog post (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Blood Tests Management",
+			"item": [
+				{
+					"name": "Get All Blood Tests",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/blood-tests",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blood-tests"
+							]
+						},
+						"description": "Get all blood tests"
+					}
+				},
+				{
+					"name": "Create Blood Test",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Complete Blood Count\",\n  \"description\": \"CBC test for complete blood analysis\",\n  \"price\": 500,\n  \"category\": \"Hematology\",\n  \"normalRanges\": {\n    \"hemoglobin\": \"12-16 g/dL\",\n    \"wbc\": \"4000-11000 cells/μL\"\n  }\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/blood-tests",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blood-tests"
+							]
+						},
+						"description": "Create a new blood test (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Blood Reports Management",
+			"item": [
+				{
+					"name": "Get All Blood Reports",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/blood-reports",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blood-reports"
+							]
+						},
+						"description": "Get all blood reports"
+					}
+				},
+				{
+					"name": "Upload Blood Report",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "patientId",
+									"value": "{{johnDoeId}}",
+									"type": "text"
+								},
+								{
+									"key": "testType",
+									"value": "Complete Blood Count",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/blood-reports/upload",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"blood-reports",
+								"upload"
+							]
+						},
+						"description": "Upload blood report file"
+					}
+				}
+			]
+		},
+		{
+			"name": "Prescriptions Management",
+			"item": [
+				{
+					"name": "Get All Prescriptions",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/prescriptions",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"prescriptions"
+							]
+						},
+						"description": "Get all prescriptions"
+					}
+				},
+				{
+					"name": "Upload Prescription",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "patientId",
+									"value": "{{johnDoeId}}",
+									"type": "text"
+								},
+								{
+									"key": "notes",
+									"value": "Monthly prescription",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/prescriptions/upload",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"prescriptions",
+								"upload"
+							]
+						},
+						"description": "Upload prescription file"
+					}
+				}
+			]
+		},
+		{
+			"name": "Coupons Management",
+			"item": [
+				{
+					"name": "Get All Coupons",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/coupons",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"coupons"
+							]
+						},
+						"description": "Get all coupons"
+					}
+				},
+				{
+					"name": "Create Coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"code\": \"HEALTH20\",\n  \"discount\": 20,\n  \"discountType\": \"percentage\",\n  \"expiryDate\": \"2025-12-31\",\n  \"description\": \"20% discount on all services\",\n  \"maxUses\": 100\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/coupons",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"coupons"
+							]
+						},
+						"description": "Create a new coupon (Admin only)"
+					}
+				},
+				{
+					"name": "Validate Coupon",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"code\": \"HEALTH20\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/coupons/validate",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"coupons",
+								"validate"
+							]
+						},
+						"description": "Validate a coupon code"
+					}
+				}
+			]
+		},
+		{
+			"name": "Activities Management",
+			"item": [
+				{
+					"name": "Get All Activities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/activities",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"activities"
+							]
+						},
+						"description": "Get all health activities"
+					}
+				},
+				{
+					"name": "Create Activity",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Morning Yoga Session\",\n  \"description\": \"Start your day with energizing yoga poses\",\n  \"videoUrl\": \"https://example.com/yoga-video\",\n  \"thumbnailUrl\": \"https://example.com/yoga-thumbnail.jpg\",\n  \"duration\": 30,\n  \"category\": \"Exercise\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/activities",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"activities"
+							]
+						},
+						"description": "Create a new health activity (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Testimonials Management",
+			"item": [
+				{
+					"name": "Get All Testimonials",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/testimonials",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"testimonials"
+							]
+						},
+						"description": "Get all testimonials"
+					}
+				},
+				{
+					"name": "Create Testimonial",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John Smith\",\n  \"content\": \"Excellent service and professional staff. Highly recommended!\",\n  \"rating\": 5,\n  \"location\": \"New York\",\n  \"avatarUrl\": \"https://example.com/avatar.jpg\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/testimonials",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"testimonials"
+							]
+						},
+						"description": "Create a new testimonial (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "CMS Management",
+			"item": [
+				{
+					"name": "Get All CMS Content",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/api/cms",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"cms"
+							]
+						},
+						"description": "Get all CMS content"
+					}
+				},
+				{
+					"name": "Create CMS Content",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"key\": \"homepage_banner\",\n  \"title\": \"Welcome to Our Hospital\",\n  \"content\": \"Providing quality healthcare services since 1990\",\n  \"type\": \"banner\",\n  \"isActive\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/cms",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"cms"
+							]
+						},
+						"description": "Create CMS content (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "Portfolio Management",
+			"item": [
+				{
+					"name": "Get All Portfolio Items",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/portfolio",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"portfolio"
+							]
+						},
+						"description": "Get all portfolio items"
+					}
+				},
+				{
+					"name": "Create Portfolio Item",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"title\": \"Modern Surgery Suite\",\n  \"description\": \"State-of-the-art surgical facilities\",\n  \"imageUrl\": \"https://example.com/surgery-suite.jpg\",\n  \"category\": \"Facilities\",\n  \"featured\": true\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/portfolio",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"portfolio"
+							]
+						},
+						"description": "Create portfolio item (Admin only)"
+					}
+				}
+			]
+		},
+		{
+			"name": "File Management",
+			"item": [
+				{
+					"name": "Upload File",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{adminToken}}"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "category",
+									"value": "documents",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/upload",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"upload"
+							]
+						},
+						"description": "Upload a file"
+					}
+				},
+				{
+					"name": "Get File",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/file/{{filename}}",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"file",
+								"{{filename}}"
+							]
+						},
+						"description": "Get/download a file"
+					}
+				}
+			]
+		},
+		{
+			"name": "Public APIs",
+			"item": [
+				{
+					"name": "Get Public Data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/api/public",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"public"
+							]
+						},
+						"description": "Get public hospital data"
+					}
+				},
+				{
+					"name": "Contact Form Submit",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\",\n  \"subject\": \"Inquiry about services\",\n  \"message\": \"I would like to know more about your services...\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/public/contact",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"public",
+								"contact"
+							]
+						},
+						"description": "Submit contact form"
+					}
+				}
+			]
+		},
+		{
+			"name": "Capacity Testing",
+			"item": [
+				{
+					"name": "Test Capacity - Book 1st Patient",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"doctorId\": \"{{doctorId}}\",\n  \"service\": \"General Consultation\",\n  \"serviceId\": \"{{generalConsultationId}}\",\n  \"date\": \"2025-08-06\",\n  \"time\": \"14:00\",\n  \"notes\": \"Capacity test - Patient 1\",\n  \"patientFirstName\": \"Capacity\",\n  \"patientLastName\": \"Test1\",\n  \"patientContact\": \"+1111111111\",\n  \"patientAge\": 25,\n  \"patientGender\": \"Male\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"book"
+							]
+						},
+						"description": "Test booking 1st patient in a time slot"
+					}
+				},
+				{
+					"name": "Test Capacity - Book 2nd Patient",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"doctorId\": \"{{doctorId}}\",\n  \"service\": \"General Consultation\",\n  \"serviceId\": \"{{generalConsultationId}}\",\n  \"date\": \"2025-08-06\",\n  \"time\": \"14:00\",\n  \"notes\": \"Capacity test - Patient 2\",\n  \"patientFirstName\": \"Capacity\",\n  \"patientLastName\": \"Test2\",\n  \"patientContact\": \"+2222222222\",\n  \"patientAge\": 30,\n  \"patientGender\": \"Female\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"book"
+							]
+						},
+						"description": "Test booking 2nd patient in same time slot"
+					}
+				},
+				{
+					"name": "Test Capacity - Book 5th Patient",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"doctorId\": \"{{doctorId}}\",\n  \"service\": \"General Consultation\",\n  \"serviceId\": \"{{generalConsultationId}}\",\n  \"date\": \"2025-08-06\",\n  \"time\": \"14:00\",\n  \"notes\": \"Capacity test - Patient 5 (Last slot)\",\n  \"patientFirstName\": \"Capacity\",\n  \"patientLastName\": \"Test5\",\n  \"patientContact\": \"+5555555555\",\n  \"patientAge\": 40,\n  \"patientGender\": \"Male\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"book"
+							]
+						},
+						"description": "Test booking 5th patient (should fill the slot)"
+					}
+				},
+				{
+					"name": "Test Capacity - Book 6th Patient (Should Fail)",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"doctorId\": \"{{doctorId}}\",\n  \"service\": \"General Consultation\",\n  \"serviceId\": \"{{generalConsultationId}}\",\n  \"date\": \"2025-08-06\",\n  \"time\": \"14:00\",\n  \"notes\": \"Capacity test - Patient 6 (Should be rejected)\",\n  \"patientFirstName\": \"Capacity\",\n  \"patientLastName\": \"Test6\",\n  \"patientContact\": \"+6666666666\",\n  \"patientAge\": 45,\n  \"patientGender\": \"Female\"\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/api/appointment-booking/book",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"api",
+								"appointment-booking",
+								"book"
+							]
+						},
+						"description": "Test overbooking - this should fail with 'fully booked' message"
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://localhost:5001",
+			"type": "string"
+		},
+		{
+			"key": "adminId",
+			"value": "688ba862b79249c2062db7f8",
+			"type": "string"
+		},
+		{
+			"key": "doctorId",
+			"value": "68889eaf2837bec04fdef000",
+			"type": "string"
+		},
+		{
+			"key": "johnDoeId",
+			"value": "686b6bb290eaf25a8dc49e83",
+			"type": "string"
+		},
+		{
+			"key": "janeSmithId",
+			"value": "688f02e2a92d732bfa177b0f",
+			"type": "string"
+		},
+		{
+			"key": "bobJohnsonId",
+			"value": "688f041bb79249c2062dc316",
+			"type": "string"
+		},
+		{
+			"key": "aliceBrownId",
+			"value": "688f041cb79249c2062dc317",
+			"type": "string"
+		},
+		{
+			"key": "charlieWilsonId",
+			"value": "688f041cb79249c2062dc318",
+			"type": "string"
+		},
+		{
+			"key": "generalConsultationId",
+			"value": "688f03c3b79249c2062dc311",
+			"type": "string"
+		},
+		{
+			"key": "followupConsultationId",
+			"value": "688f03c3b79249c2062dc312",
+			"type": "string"
+		},
+		{
+			"key": "healthCheckupId",
+			"value": "688f03c4b79249c2062dc313",
+			"type": "string"
+		},
+		{
+			"key": "bloodPressureCheckId",
+			"value": "688f03c4b79249c2062dc314",
+			"type": "string"
+		},
+		{
+			"key": "diabetesConsultationId",
+			"value": "688f03c4b79249c2062dc315",
+			"type": "string"
+		},
+		{
+			"key": "adminToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "doctorToken",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "appointmentId",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

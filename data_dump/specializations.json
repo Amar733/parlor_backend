@@ -1,0 +1,98 @@
+[
+  {
+    "_id": "697de038417facf8cf4b532a",
+    "specialization": "Orthopedic",
+    "active": true,
+    "createdAt": "2026-01-31T10:58:00.957Z",
+    "updatedAt": "2026-01-31T10:58:00.957Z",
+    "__v": 0
+  },
+  {
+    "_id": "697de075417facf8cf4b5336",
+    "specialization": "Psychiatrist",
+    "active": true,
+    "createdAt": "2026-01-31T10:59:01.181Z",
+    "updatedAt": "2026-01-31T10:59:01.181Z",
+    "__v": 0
+  },
+  {
+    "_id": "697de091417facf8cf4b5339",
+    "specialization": "Ophthalmologist",
+    "active": true,
+    "createdAt": "2026-01-31T10:59:29.272Z",
+    "updatedAt": "2026-01-31T10:59:29.272Z",
+    "__v": 0
+  },
+  {
+    "_id": "697de0a6417facf8cf4b533c",
+    "specialization": "General Physician",
+    "active": true,
+    "createdAt": "2026-01-31T10:59:50.712Z",
+    "updatedAt": "2026-01-31T10:59:50.712Z",
+    "__v": 0
+  },
+  {
+    "_id": "697de0b2417facf8cf4b5340",
+    "specialization": "Endocrinologist",
+    "active": true,
+    "createdAt": "2026-01-31T11:00:02.370Z",
+    "updatedAt": "2026-01-31T11:00:02.370Z",
+    "__v": 0
+  },
+  {
+    "_id": "697de0c0417facf8cf4b5343",
+    "specialization": "Gastroenterologist",
+    "active": true,
+    "createdAt": "2026-01-31T11:00:16.316Z",
+    "updatedAt": "2026-01-31T11:00:16.316Z",
+    "__v": 0
+  },
+  {
+    "_id": "697de228417facf8cf4b540a",
+    "specialization": "Pediatrician",
+    "active": true,
+    "createdAt": "2026-01-31T11:06:16.726Z",
+    "updatedAt": "2026-01-31T11:06:16.726Z",
+    "__v": 0
+  },
+  {
+    "_id": "697f6bb3ad16895d7d4e47de",
+    "specialization": "Cardiologist",
+    "active": true,
+    "createdAt": "2026-02-01T15:05:23.227Z",
+    "updatedAt": "2026-02-01T15:05:23.227Z",
+    "__v": 0
+  },
+  {
+    "_id": "697f6bc2ad16895d7d4e47e4",
+    "specialization": "Dermatologist",
+    "active": true,
+    "createdAt": "2026-02-01T15:05:38.073Z",
+    "updatedAt": "2026-02-01T15:05:38.073Z",
+    "__v": 0
+  },
+  {
+    "_id": "697f6bcead16895d7d4e47ea",
+    "specialization": "Gynecologist",
+    "active": true,
+    "createdAt": "2026-02-01T15:05:50.589Z",
+    "updatedAt": "2026-02-01T15:05:50.589Z",
+    "__v": 0
+  },
+  {
+    "_id": "697f6bdbad16895d7d4e47f0",
+    "specialization": "Neurologist",
+    "active": true,
+    "createdAt": "2026-02-01T15:06:03.678Z",
+    "updatedAt": "2026-02-01T15:06:03.678Z",
+    "__v": 0
+  },
+  {
+    "_id": "697f746806b07fd649b87c2f",
+    "specialization": "Dentist",
+    "active": true,
+    "createdAt": "2026-02-01T15:42:32.505Z",
+    "updatedAt": "2026-02-01T15:42:32.505Z",
+    "__v": 0
+  }
+]

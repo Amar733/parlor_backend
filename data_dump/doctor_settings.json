@@ -1,0 +1,38 @@
+[
+  {
+    "_id": "695b8f79ed3800bdb742a72e",
+    "doctor_id": "686b6bb190eaf25a8dc49e55",
+    "__v": 0,
+    "address": "1st floor CE /1 /A / 151 Street No 198 CE Block Near Axis Mall Action Area I New Town Kolkata",
+    "clinicName": "SRM Arnik Skin & Healthcare Clinic",
+    "createdAt": "2026-01-05T10:16:25.712Z",
+    "degree": "123",
+    "doctorName": "Dr.Satarupa Mondal",
+    "email": "srmarnik@gmail.com",
+    "logo": "/uploads/1761355222917-250x250.png",
+    "phone": "+918981443595",
+    "regNo": "123",
+    "speciality": "MD Dermatology",
+    "updatedAt": "2026-01-05T11:06:03.741Z",
+    "signature": "",
+    "templateTheme": "default"
+  },
+  {
+    "_id": "695b9eeced3800bdb742a72f",
+    "doctor_id": "68948e32fe02f1b6d015fa07",
+    "__v": 0,
+    "address": "1st floor CE /1 /A / 151 Street No 198 CE Block Near Axis Mall Action Area I New Town Kolkata",
+    "clinicName": "SRM Arnik Skin & Healthcare Clinic",
+    "createdAt": "2026-01-05T11:22:20.027Z",
+    "degree": "123",
+    "doctorName": "Dr.Satarupa Mondal",
+    "email": "srmarnik@gmail.com",
+    "logo": "/uploads/1768930581220-logo.png",
+    "phone": "+918981443595",
+    "regNo": "123",
+    "signature": "/uploads/1767612312825-1756057977085-386caac7_Satarupa_Signature-removebg-preview.png",
+    "speciality": "MD Dermatology",
+    "templateTheme": "modern",
+    "updatedAt": "2026-01-20T17:36:33.823Z"
+  }
+]
