@@ -55,6 +55,29 @@ const upload = multer({
     fileFilter: fileFilter
 });
 
+// Backup upload configuration
+const backupStorage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        const backupDir = path.join(process.cwd(), 'backups', 'json');
+        cb(null, backupDir);
+    },
+    filename: function (req, file, cb) {
+        cb(null, file.originalname);
+    }
+});
+
+const backupUpload = multer({
+    storage: backupStorage,
+    limits: { fileSize: 50000000 }, // 50MB
+    fileFilter: (req, file, cb) => {
+        if (file.originalname.endsWith('.json') || file.originalname.endsWith('.zip')) {
+            cb(null, true);
+        } else {
+            cb(new Error('Only .json and .zip files allowed'));
+        }
+    }
+});
+
 // File serving middleware with security
 const serveFile = async (req, res) => {
     try {
@@ -91,7 +114,7 @@ const serveFile = async (req, res) => {
     }
 };
 
-module.exports = { upload, serveFile, mimeTypes };
+module.exports = { upload, backupUpload, serveFile, mimeTypes };
 
 
 

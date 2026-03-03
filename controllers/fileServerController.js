@@ -20,7 +20,7 @@ exports.serveFile = async (req, res) => {
       });
     }
 
-    const filePath = path.join(process.cwd(), ".uploads", filename);
+    const filePath = path.join(process.cwd(), "uploads", filename);
 
     try {
       // Check if file exists and get stats
@@ -238,7 +238,7 @@ exports.fileMetadata = async (req, res) => {
       return res.status(400).end();
     }
 
-    const filePath = path.join(process.cwd(), ".uploads", filename);
+    const filePath = path.join(process.cwd(), "uploads", filename);
 
     try {
       const stats = await fs.stat(filePath);

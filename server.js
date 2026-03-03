@@ -86,6 +86,8 @@ app.use("/api/testimonials", rateLimits.public);
 // Routes
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/public", require("./routes/public"));
+app.use("/api/utility", require("./routes/utility")); // Moved here to allow public access to GET charges
+
 
 // Apply role-based filtering to protected routes
 app.use("/api", roleBasedFilter());
@@ -132,6 +134,8 @@ app.use("/api/packages", require("./routes/packages"));
 app.use("/api/doctor-settings", require("./routes/doctorSettings"));
 app.use("/api/prescription-settings", require("./routes/prescriptionSettings"));
 app.use("/api/settings/access-time", require("./routes/accessTime"));
+app.use("/api/payments", require("./routes/paymentRoutes"));
+
 // app.use("/api/bulk-delete", require("./routes/bulkDelete"));
 
 // Health check route
